@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Comforter&family=Dongle:wght@300&family=Oswald:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gym Website for ad</title>
+    <style>
+      body {
+        background-image: url("Fitness gym1.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-family: "Baloo Bhaijaan 2", cursive;
+      }
+      .left {
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+      }
+      .left img {
+        width: 180px;
+        height: 150px;
+      }
+      .left div {
+        text-align: center;
+        font-size: 45px;
+        font-family: "Comforter", cursive;
+      }
+      .mid {
+        display: block;
+        width: 55%;
+        margin: 10px auto;
+      }
+      .right {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: inline-block;
+      }
+
+      .btn {
+        margin: 20px 20px;
+        padding: 20px 20 px;
+        background-color: transparent;
+        color: white;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        size: 20px;
+      }
+
+      .btn:hover {
+        background-color: black;
+      }
+
+      .navbar {
+        display: inline-block;
+      }
+
+      .navbar li {
+        display: inline-block;
+        font-size: 25px;
+      }
+      .navbar li a {
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        padding: 20px 20px;
+      }
+      .navbar li a:hover {
+        color: rgb(95, 100, 92);
+        text-decoration: underline;
+        text-decoration: none;
+        padding: 20px 20px;
+      }
+
+      .cont {
+        border: 2px solid rgb(248, 242, 242);
+        border-radius: 30px;
+        margin: 2px 2px;
+        padding: 20px 30px;
+        position: absolute;
+
+        right: 75px;
+        width: 40%;
+      }
+      h2 {
+        text-align: center;
+        font-size: 35px;
+      }
+
+      .drop {
+        font-size: 25px;
+        text-align: center;
+        display: block;
+        width: 300px;
+        margin: 12px auto;
+        padding: 2px 2px;
+        border-radius: 10px;
+      }
+
+      #join {
+        font-size: 25px;
+        display: block;
+        width: 300px;
+        margin: 12px auto;
+      }
+
+      #do {
+        font-size: 20px;
+        border-radius: 15px;
+      }
+
+      .forms input {
+        font-size: 20px;
+        text-align: center;
+        display: block;
+        width: 300px;
+        margin: 12px auto;
+        padding: 2px 2px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <img src="Fitness Gym 1.png" alt="" />
+        <div>Fitness Gym</div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li class="box"><a href="">Home</a></li>
+          <li class="box"><a href="">About Us</a></li>
+          <li class="box"><a href="">Facilites</a></li>
+          <li class="box"><a href="">Pakages</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Call Us</button>
+        <button class="btn">PayMent</button>
+      </div>
+    </header>
+
+    <div class="cont">
+      <h2>Join the Best Gym with Offer of 30% off</h2>
+      <form action="backend.php" class="forms">
+        <div class="in">
+          <input type="text" name="" placeholder="Enter Name Name" />
+        </div>
+        <div class="in">
+          <input type="number" name="" placeholder="Enter Your age" />
+        </div>
+        <div class="in">
+          <input type="text" name="" placeholder="Enter Yout Name" />
+        </div>
+        <div class="drop">
+          <label for="type">Joining for : </label>
+          <select name="type" id="do">
+            <option value="wl">Weigth-Loss</option>
+            <option value="bb">Body-Building</option>
+            <option value="s">Stamina</option>
+          </select>
+        </div>
+        <button class="btn" id="join">Join</button>
+      </form>
+    </div>
+  </body>
+</html>
